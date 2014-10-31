@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        .heart {
+            background: url("images/heart1.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+            display: inline-block;
+            height: 64px;
+            position: absolute;
+            transform-origin: center bottom 0;
+            width: 68px;
+        }
+
+        .heart1 {
+            animation: 1.2s ease-in-out 0s alternate none infinite running yb;
+        }
+        
+        @-webkit-keyframes yb
+        {
+            0%{-webkit-transform:skew(-8deg) scale(0.8);}
+            100%{-webkit-transform:skew(8deg) scale(0.8);}
+        }
+        @-ms-keyframes yb
+        {
+            0%{-ms-transform:skew(-8deg) scale(0.8);}
+            100%{-ms-transform:skew(8deg) scale(0.8);}
+        }
+        @keyframes yb
+        {
+            0%{transform:skew(-8deg) scale(0.8);}
+            100%{transform:skew(8deg) scale(0.8);}
+        }
+    </style>
+</head>
+<body>
+<div class="heart heart1">
+</div>
+</body>
+</html>
